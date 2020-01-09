@@ -26,8 +26,6 @@ GLFWwindow* window;
 #include <common/objloader.hpp>
 #include <common/texture.hpp>
 
-#include <common/AF3.hpp>
-
 void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
 {
 }
