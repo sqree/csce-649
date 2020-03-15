@@ -4,8 +4,6 @@
 #include <stdlib.h>
 #include <vector>
 #include <limits>
-#include <glm/gtc/matrix_transform.hpp>
-#include <glm/gtx/transform.hpp>
 
 // Include GLEW
 #include <GL/glew.h>
@@ -17,6 +15,7 @@ GLFWwindow* window;
 // Include GLM
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtx/transform.hpp>
 
 #include <common/shader.hpp>
 #include <common/controls.hpp>
