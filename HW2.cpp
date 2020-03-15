@@ -4,8 +4,6 @@
 #include <stdlib.h>
 #include <vector>
 #include <limits>
-#include <glm/gtc/matrix_transform.hpp>
-#include <glm/gtx/transform.hpp>
 
 // Include GLEW
 #include <GL/glew.h>
@@ -17,6 +15,7 @@ GLFWwindow* window;
 // Include GLM
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtx/transform.hpp>
 
 #include <common/shader.hpp>
 #include <common/controls.hpp>
@@ -125,7 +124,7 @@ int main( void )
     // Get a handle for our "MVP" uniform
     GLuint MatrixID = glGetUniformLocation(programID, "MVP");
     
-    // Projection matrix : 45ก Field of View, 4:3 ratio, display range : 0.1 unit <-> 100 units
+    // Projection matrix : 45ยก Field of View, 4:3 ratio, display range : 0.1 unit <-> 100 units
     glm::mat4 Projection = glm::perspective(glm::radians(45.0f), 4.0f / 3.0f, 0.1f, 100.0f);
     // Camera matrix
     glm::mat4 View       = glm::lookAt(
